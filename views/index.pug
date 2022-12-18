@@ -2,20 +2,22 @@ doctype html
 
 html
   head
-		meta(charset='utf-8')
+    meta(charset='utf-8')
     link(rel="icon" type="image/svg+xml" href="/vite.svg")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title Vite + Vue + TS + Fastify
+    title.
+      Vite + Vue + TS + Fastify
 
-		if Array.isArray(clientEntry.css)
-			each href in clientEntry.css
-				link(rel='preload' href=`/assets/${href}` as='style')
-
-		script.
-			var CLIENT_ENTRY = "#{clientEntry.file}";
+    // if Array.isArray(clientEntry.css)
+      each href in clientEntry.css
+        link(rel='preload' href=`/assets/${href}` as='style')
 
     script.
-      import(`/assets/${CLIENT_ENTRY}`)
+      var CLIENT_ENTRY = "#{clientEntry.file}";
+
+    //script.
+    //  import(`/assets/${CLIENT_ENTRY}`)
 
   body
     div#app
+    script(type="module" src=`/assets/${clientEntry.file}`)
