@@ -1,4 +1,3 @@
-
 import Fastify from 'fastify';
 import fastifyStatic from '@fastify/static';
 import fastifyView from '@fastify/view';
