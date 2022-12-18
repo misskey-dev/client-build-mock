@@ -8,7 +8,7 @@ html
     title.
       Vite + Vue + TS + Fastify
 
-    // if Array.isArray(clientEntry.css)
+    if Array.isArray(clientEntry.css)
       each href in clientEntry.css
         link(rel='preload' href=`/assets/${href}` as='style')
 
