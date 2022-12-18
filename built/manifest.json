@@ -1,0 +1,21 @@
+{
+  "src/assets/vue.svg": {
+    "file": "vue-5532db34.svg",
+    "src": "src/assets/vue.svg"
+  },
+  "src/main.css": {
+    "file": "main-37a3026c.css",
+    "src": "src/main.css"
+  },
+  "src/main.ts": {
+    "file": "app-17f41999.js",
+    "src": "src/main.ts",
+    "isEntry": true,
+    "css": [
+      "main-37a3026c.css"
+    ],
+    "assets": [
+      "vue-5532db34.svg"
+    ]
+  }
+}
