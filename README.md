@@ -1,3 +1,13 @@
-# vitejs-vite-3gp9bb
+# Mock of Misskey for developing Vite or other frontend tools.
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/vitejs-vite-8xwzvr)
+```
+npm install
+```
+
+and
+
+```
+npm run build && npm start
+```
+
+Does not work in Stackblitz; run on GitHub Codespaces, for example.
