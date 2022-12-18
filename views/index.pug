@@ -10,14 +10,17 @@ html
 
     if Array.isArray(clientEntry.css)
       each href in clientEntry.css
-        link(rel='preload' href=`/assets/${href}` as='style')
+        link(rel='stylesheet' href=`/assets/${href}`)
 
     script.
       var CLIENT_ENTRY = "#{clientEntry.file}";
 
+    // our real usage
     //script.
     //  import(`/assets/${CLIENT_ENTRY}`)
 
   body
     div#app
+
+    // vite recommended usage
     script(type="module" src=`/assets/${clientEntry.file}`)

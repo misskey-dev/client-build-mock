@@ -11,6 +11,9 @@ export default defineConfig({
 				app: './src/main.ts',
 			},
     },
+    modulePreload: {
+      polyfill: true,
+    },
 		manifest: 'manifest.json',
 		cssCodeSplit: true,
     outDir: 'built',
