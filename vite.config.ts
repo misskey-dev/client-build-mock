@@ -12,6 +12,7 @@ export default defineConfig({
 			},
     },
 		manifest: 'manifest.json',
+		cssCodeSplit: true,
     outDir: 'built',
     assetsDir: '.',
     emptyOutDir: true,
