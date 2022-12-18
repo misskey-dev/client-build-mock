@@ -1,4 +1,4 @@
-# Mock of Misskey for developing Vite or other frontend tools.
+# Mock of Misskey for developing with Vite or other frontend tools.
 
 ```
 npm install
