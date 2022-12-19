@@ -26,4 +26,4 @@ html
     script(type="module" src=`/assets/${clientEntry.file}`)
 
     if process.env.NODE_ENV !== 'production'
-      script(src="/assets/@vite/client")
+      script(type="module" src="/assets/@vite/client")
