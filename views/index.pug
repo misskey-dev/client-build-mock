@@ -24,3 +24,6 @@ html
 
     // vite recommended usage
     script(type="module" src=`/assets/${clientEntry.file}`)
+
+    if process.env.NODE_ENV !== 'production'
+      script(src="/assets/@vite/client")
