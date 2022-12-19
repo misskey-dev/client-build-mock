@@ -4,8 +4,12 @@
 npm install
 ```
 
-and
+## Development (HMR)
+```
+npm run preview
+```
 
+## Production Build
 ```
 npm run build && npm start
 ```
