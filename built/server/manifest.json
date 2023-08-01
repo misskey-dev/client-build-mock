@@ -1,10 +1,21 @@
 {
-  "src/entry-server.ts": {
+  "src/App.vue": {
     "assets": [
       "vue-5532db34.svg"
     ],
     "css": [
-      "entry-server-c1c10f9f.css"
+      "App-c4d68fb2.css"
+    ],
+    "file": "App-c9b07b44.js",
+    "isDynamicEntry": true,
+    "src": "src/App.vue"
+  },
+  "src/entry-server.ts": {
+    "css": [
+      "entry-server-a5d619be.css"
+    ],
+    "dynamicImports": [
+      "src/App.vue"
     ],
     "file": "entry-server.js",
     "isEntry": true,

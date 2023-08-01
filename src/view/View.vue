@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue';
-import App from '../App.vue';
+import AppAsync from '../AppAsync';
 
 type Props = {
     message?: string;
@@ -71,7 +71,7 @@ onMounted(() => {
 </head>
 <body>
     <div id="innerapp">
-        <App />
+        <AppAsync />
     </div>
     <script v-if="clientManifest" type="module" crossorigin :src="`${assetsBase}${clientManifest['index.html'].file}`"></script>
     <template v-else>
