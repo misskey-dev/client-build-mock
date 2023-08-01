@@ -1,5 +1,5 @@
 import { ssrInterpolate, ssrRenderAttr, ssrRenderComponent, ssrRenderAttrs, ssrRenderList, renderToString } from "vue/server-renderer";
-import { defineComponent, ref, useSSRContext, onMounted, unref, createSSRApp } from "vue";
+import { defineComponent, ref, useSSRContext, onMounted, mergeProps, unref, createSSRApp } from "vue";
 const _imports_0 = "/assets/vite.svg";
 const _imports_1 = "/assets/vue-5532db34.svg";
 const _sfc_main$2 = /* @__PURE__ */ defineComponent({
@@ -88,7 +88,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       onClient.value = true;
     });
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<html${ssrRenderAttrs(_attrs)}><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TEST</title>`);
+      _push(`<html${ssrRenderAttrs(mergeProps({ lang: "en" }, _attrs))}><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>TEST</title>`);
       if (__props.clientManifest) {
         _push(`<!--[-->`);
         ssrRenderList(__props.clientManifest["index.html"].css, (css) => {
@@ -135,7 +135,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       if (__props.clientManifest) {
         _push(`<script type="module" crossorigin${ssrRenderAttr("src", `${__props.assetsBase}${__props.clientManifest["index.html"].file}`)}><\/script>`);
       } else {
-        _push(`<script type="module" src="/src/entry-client.ts"><\/script>`);
+        _push(`<!--[--><script type="module" src="/src/entry-client.ts"><\/script><script type="module" src="/@vite/client"><\/script><!--]-->`);
       }
       _push(`</body></html>`);
     };
