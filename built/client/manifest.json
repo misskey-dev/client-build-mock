@@ -1,0 +1,21 @@
+{
+  "index.css": {
+    "file": "index-e0b69a55.css",
+    "src": "index.css"
+  },
+  "index.html": {
+    "assets": [
+      "vue-5532db34.svg"
+    ],
+    "css": [
+      "index-e0b69a55.css"
+    ],
+    "file": "index-e7aac3dc.js",
+    "isEntry": true,
+    "src": "index.html"
+  },
+  "src/assets/vue.svg": {
+    "file": "vue-5532db34.svg",
+    "src": "src/assets/vue.svg"
+  }
+}

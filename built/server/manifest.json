@@ -1,0 +1,13 @@
+{
+  "src/entry-server.ts": {
+    "assets": [
+      "vue-5532db34.svg"
+    ],
+    "css": [
+      "entry-server-c1c10f9f.css"
+    ],
+    "file": "entry-server.js",
+    "isEntry": true,
+    "src": "src/entry-server.ts"
+  }
+}

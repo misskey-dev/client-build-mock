@@ -1,0 +1,53 @@
+{
+  "\u0000plugin-vue:export-helper": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "\u0000vite/modulepreload-polyfill": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "../../vite.svg": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "index.html": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "src/App.vue": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "src/App.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "src/App.vue?vue&type=style&index=0&scoped=58aba71c&lang.css": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "src/assets/vue.svg": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "src/components/HelloWorld.vue": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "src/components/HelloWorld.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "src/components/HelloWorld.vue?vue&type=style&index=0&scoped=40678b30&lang.css": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "src/entry-client.ts": [
+    "/assets/vue-5532db34.svg"
+  ],
+  "src/style.css": [
+    "/assets/vue-5532db34.svg"
+  ]
+}

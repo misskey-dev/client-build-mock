@@ -1,24 +1,21 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ command, ssrBuild }) => ({
   base: '/assets/',
   plugins: [vue()],
   build: {
 		rollupOptions: {
-			input: {
-				app: './src/main.ts',
-			},
     },
     modulePreload: {
       polyfill: true,
     },
 		manifest: 'manifest.json',
 		cssCodeSplit: true,
-    outDir: 'built',
+    //outDir: 'built',
     assetsDir: '.',
     emptyOutDir: true,
   },
-})
+}));
  
