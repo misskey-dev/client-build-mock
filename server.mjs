@@ -43,7 +43,7 @@ async function createServer(
     fastify.get('*', async (req, reply) => {
       try {
         const url = req.originalUrl.replace(viteBase, '/');
-        const template = await vite.transformIndexHtml(url, readFileSync(join(root, 'index.html'), 'utf-8'));
+        const template = await vite.transformIndexHtml(url, readFileSync(join(_dirname, 'index.html'), 'utf-8'));
         const render = (await vite.ssrLoadModule('/src/entry-server.ts')).render;
 
         const { html } = await render({
