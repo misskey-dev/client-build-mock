@@ -74,7 +74,10 @@ onMounted(() => {
         <App />
     </div>
     <script v-if="clientManifest" type="module" crossorigin :src="`${assetsBase}${clientManifest['index.html'].file}`"></script>
-    <script v-else type="module" src="/src/entry-client.ts"></script>
+    <template v-else>
+        <script type="module" src="/src/entry-client.ts"></script>
+        <script type="module" src="/@vite/client"></script>
+    </template>
 </body>
 </html>
 </template>
