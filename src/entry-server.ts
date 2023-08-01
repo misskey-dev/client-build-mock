@@ -17,9 +17,9 @@ export async function render(props?: any) {
 
 const modulesMap = new Map<string, Set<string>>();
 
-export async function renderProd(url: string, assetsBase: string, props?: any, manifest: any, clientManifest: any) {
+export async function renderProd(props: any, assetsBase: string, manifest: any, clientManifest: any) {
     const modules = await (async () => {
-        const modulesKey = `${url}::${JSON.stringify(props)}`
+        const modulesKey = `${JSON.stringify(props)}`
         const modules = modulesMap.get(modulesKey);
         if (modules) {
             return modules;
@@ -33,7 +33,7 @@ export async function renderProd(url: string, assetsBase: string, props?: any, m
         }
         return ctx.modules;
     })();
-    const app = createApp({ modules: Array.from(modules), manifest, clientManifest, url, assetsBase, ...props });
+    const app = createApp({ modules: Array.from(modules), manifest, clientManifest, assetsBase, ...props });
     const ctx = {} as SSRContext;
     const html = await renderToString(app, ctx);
     return { html, ctx };

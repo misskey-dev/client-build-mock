@@ -4,7 +4,7 @@ import App from '../App.vue';
 
 type Props = {
     message?: string;
-    path?: string;
+    path: string;
     manifest?: Record<string, any>;
     modules: string[];
     clientManifest?: Record<string, any>;
